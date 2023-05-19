@@ -1,5 +1,4 @@
 // Напиши скрипт, який для кожного елемента масиву ingredients:
-
 // Створить окремий елемент <li>. Обов'язково використовуй метод document.createElement().
 // Додасть назву інгредієнта як його текстовий вміст.
 // Додасть елементу клас item.
@@ -15,7 +14,6 @@ const ingredients = [
 ];
 
 const list = document.querySelector('#ingredients');
-console.log(list);
 const items = [];
 
 ingredients.forEach(ingredient => {
@@ -23,7 +21,6 @@ ingredients.forEach(ingredient => {
   item.classList.add('item');
   item.textContent = ingredient;
   items.push(item);
-  console.log(item);
 });
 
 list.append(...items);
